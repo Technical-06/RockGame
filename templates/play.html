@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}  
+    <link href="{% static 'css/play.css' %}" rel="stylesheet">  
+    <script src="{% static 'javascript/user.js' %}" type="text/javascript"></script>  
+</head>
+<body style="background-color:lightcoral">
+  
+    <div id="settitle" style="text-align: center;color:brown">
+      <h1><i>Rock Paper Sissor Game</i></h1>
+    <h2>CLICK ON ANY ONE IMAGE TO PLAY! </h2>
+
+      
+    </div>
+  
+  <div id="result">
+
+
+         <br>
+        
+           <image src="../static/images/rock.jpg" id="rock" style="height:300px;margin-right:40px;margin-left: 50px;border-radius: 1em;"   onclick=getMyResult(this.id);>
+           
+           <image src="../static/images/paper.jpg"id="paper" style="height:300px;margin-right:50px;border-radius: 1em;"  onclick=getMyResult(this.id)>
+            
+          
+           <image src="../static/images/scissor.jpg"id="scissor" style="height:300px;border-radius: 1em;"  onclick=getMyResult(this.id);>
+            <br><br>
+          
+    
+  </div>
+  
+</body>
+</html>
+
